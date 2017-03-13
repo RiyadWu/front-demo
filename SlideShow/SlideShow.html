@@ -42,6 +42,32 @@
                 transition: transform(-50%);
             }
 
+            .wu-horizontal-center{
+                position: absolute;
+                right: 50%;
+                transition: transform(-50%);
+            }
+
+            .wu-slide-indicators{
+                position: absolute;
+                bottom: 5px;
+                background: hsla(0,0%,100%,.3);
+                border-radius: 10px;
+                padding: 4px;
+            }
+
+            .wu-slide-indi{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: white;
+            }
+
+            .wu-slide-indi-active{
+                background: red;
+            }
+
         </style>
     </head>
     <body>
@@ -51,10 +77,10 @@
             <img id="wu-slide-img-2" class="wu-slide-img" src="images/3.jpg" alt="充电宝">
             <button class="wu-slide-button wu-left wu-vertical-center" data-next=-1>上一张</button>
             <button class="wu-slide-button wu-right wu-vertical-center" data-next=1>下一张</button>
-            <div class="wu-slide-indicators">
+            <div class="wu-slide-indicators wu-horizontal-center">
                 <div id="wu-slide-indi-0" class="wu-slide-indi wu-slide-indi-active"></div>
-                <div id="wu-slide-indi-0" class="wu-slide-indi"></div>
-                <div id="wu-slide-indi-0" class="wu-slide-indi"></div>
+                <div id="wu-slide-indi-1" class="wu-slide-indi"></div>
+                <div id="wu-slide-indi-2" class="wu-slide-indi"></div>
             </div>
         </div>
     </body>
