@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SlideShow</title>
+        <style media="screen">
+            .wu-slide{
+                position: relative;
+                width: 700px;
+            }
+            .wu-slide-img{
+                display: none;
+                width: 100%;
+            }
+            .wu-slide-img-active{
+                display: block;
+            }
+
+            .wu-slide-button{
+                border: none;
+                background: black;
+                opacity: 0.1;
+                color: white;
+            }
+
+            .wu-slide-button:hover{
+                opacity: 0.7;
+            }
+
+            .wu-left{
+                left: 0;
+            }
+
+            .wu-right{
+                position: absolute;
+                right: 0;
+            }
+
+            .wu-vertical-center{
+                position: absolute;
+                top: 50%;
+                transition: transform(-50%);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wu-slide" data-images=3 data-active=0>
+            <img id="wu-slide-img-0" class="wu-slide-img wu-slide-img-active" src="images/1.jpg" alt="家电">
+            <img id="wu-slide-img-1" class="wu-slide-img" src="images/2.jpg" alt="巧克力">
+            <img id="wu-slide-img-2" class="wu-slide-img" src="images/3.jpg" alt="充电宝">
+            <button class="wu-slide-button wu-left wu-vertical-center" data-next=-1>上一张</button>
+            <button class="wu-slide-button wu-right wu-vertical-center" data-next=1>下一张</button>
+            <div class="wu-slide-indicators">
+                <div id="wu-slide-indi-0" class="wu-slide-indi wu-slide-indi-active"></div>
+                <div id="wu-slide-indi-0" class="wu-slide-indi"></div>
+                <div id="wu-slide-indi-0" class="wu-slide-indi"></div>
+            </div>
+        </div>
+    </body>
+</html>
