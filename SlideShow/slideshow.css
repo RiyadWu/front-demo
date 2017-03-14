@@ -1,0 +1,63 @@
+.wu-slide{
+    position: relative;
+    width: 700px;
+}
+.wu-slide-img{
+    display: none;
+    width: 100%;
+}
+.wu-slide-img-active{
+    display: block;
+}
+
+.wu-slide-button{
+    border: none;
+    background: black;
+    opacity: 0.1;
+    color: white;
+}
+
+.wu-slide-button:hover{
+    opacity: 0.7;
+}
+
+.wu-left{
+    left: 0;
+}
+
+.wu-right{
+    position: absolute;
+    right: 0;
+}
+
+.wu-vertical-center{
+    position: absolute;
+    top: 50%;
+    transition: transform(-50%);
+}
+
+.wu-horizontal-center{
+    position: absolute;
+    right: 50%;
+    transition: transform(-50%);
+}
+
+.wu-slide-indicators{
+    position: absolute;
+    bottom: 5px;
+    background: hsla(0,0%,100%,.3);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.wu-slide-indi{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+.wu-slide-indi-active{
+    background: red;
+}
