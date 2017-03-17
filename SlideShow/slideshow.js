@@ -52,7 +52,7 @@ var showIndicator = function(index){
 }
 
 var updateSlideActive = function(index){
-    var s = '.slide'
+    var s = '.wu-slide'
     var slide = e(s)
     slide.dataset.active = index
 }
